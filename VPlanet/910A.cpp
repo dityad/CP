@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Greedly choose the maximum distance to jump
 int main(void)
 {
     int n,d;
@@ -20,7 +21,7 @@ int main(void)
                 exit(0);
             }
 
-            else if(int(s[current + i])==49)
+            else if((s[current + i])=='1') // To compare char to number use '1'
             {
                 current += i;
                 count += 1;
